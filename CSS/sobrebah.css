@@ -13,6 +13,7 @@ body{
 .video {
     margin-top: 0;
     margin-left: 10px;
+    margin-right:3px ;
     width: 700px;
     height: 400px;
 }
@@ -20,6 +21,36 @@ body{
     background: rgba(197, 9, 72, .8);
     block-size: 80%;
 }
+/* menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(197, 9, 72, .9);
+     }
+li {
+   float: right;
+   }
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ li a:hover {
+     background-color: rgb(247, 195, 24);
+ }
+ .active {
+     background-color: rgb(247, 195, 24);
+ }
+ ul {
+     position: -webkit-sticky; /*safari */
+     position: sticky;
+     top: 0px;
+     width: 100%;
+ }
 
 .title {
     font-family: 'Oswald', sans-serif;
@@ -43,3 +74,13 @@ h3 {
     font-size: 2rem;
 }
 
+/* BAH */
+.column1 {
+    width: 200px;
+}
+
+  @media screen and (max-width: 560px) {
+    .column {
+      width: 100%;
+    }
+  }

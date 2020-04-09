@@ -1,7 +1,7 @@
 body{
     background: #fff;
     margin: 0;
-    color: rgb(20, 20, 20);
+    color: #000000;
     font-family: 'Open Sans', sans-serif;
 } 
 .container {
@@ -18,7 +18,7 @@ body{
     height: 400px;
 }
 .header-container {
-    background: rgba(197, 9, 72, .8);
+    background: #c50948;
     block-size: 80%;
 }
 /* menu */
@@ -27,7 +27,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(197, 9, 72, .9);
+    background-color: #c50948;
      }
 li {
    float: right;
@@ -40,10 +40,10 @@ li a {
    text-decoration: none;
  }
  li a:hover {
-     background-color: rgb(247, 195, 24);
+     background-color: #FBC207;
  }
  .active {
-     background-color: rgb(247, 195, 24);
+     background-color: #FBC207;
  }
  ul {
      position: -webkit-sticky; /*safari */
@@ -66,21 +66,97 @@ li a {
     text-align: center;
 }
 p {
-    text-align: center;
-    font-size: 1.25rem;
-}
+    font-family: 'Soleil', sans-serif;
+    text-align: justify;;
+    color: #333333;
+    font-size: 18px;
+    line-height: 30px;
+   }
 h3 {
     text-align: center;
     font-size: 2rem;
 }
 
-/* BAH */
-.column1 {
-    width: 200px;
+/* Culumnas */
+
+.column {
+    float: left;
+    padding: 10px;
+    max-height: 1000000px;
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .rithg {
+    width: 75%;
+    margin-right: 20px;
+  }
+  .row {
+    display: inline-flex;
 }
 
-  @media screen and (max-width: 560px) {
+/* MENU VERTICAL */
+.vertical-menu {
+    width: 250px; 
+  }
+  
+  .vertical-menu a {
+    background-color: white; 
+    color: black; 
+    display: block; 
+    padding: 12px; 
+    text-decoration: none; 
+  }
+  
+  .vertical-menu a:hover {
+    background-color:  #FBC207; 
+  }
+
+/* FOOTER */
+.footer {
+    padding: 4rem 4rem;
+    }
+.footer-container {
+    height: 50px;
+    width: 50px;
+    }
+
+
+  @media screen and (max-width: 600px) {
     .column {
       width: 100%;
+      display: block;
     }
-  }
+    .left{
+      display: none;
+    }
+    .rithg {
+      width: 100%;
+    }
+    .video{
+      width: 580px;
+      margin-left: none;
+      margin-right: none;
+      background-color: orange;
+    }
+    .grid-2{
+      display:block;
+      width: 100%;
+    }
+    .title{
+      margin-top: 0;
+    }
+    .header-container {
+      background: #c50948;
+      block-size: 70%;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #c50948;
+    }
+   }

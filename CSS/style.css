@@ -167,7 +167,7 @@ h3 a:hover {
 
 
    
-@media(max-width:560px){
+@media screen and (max-width: 600px) {
     .header::after{
         height: 50vh;
     }
@@ -176,31 +176,32 @@ h3 a:hover {
         margin-top: 5px;
     }
     .header-content .logo{
+        margin-top: 35px;
         height: 100px;
         width: 100px;
     }
     .header-content .text{
         display: none;
     }
-    .grid-3, .grid-2 {
+    .grid-2 {
         grid-template-columns: 1fr;
-
+        margin: 5px;
     }
     .servicios {
         padding: 1rem 1rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
     }
-    
-}
-
-@media(max-height:500px){
-    .header-content .text {
-        display: none;
+    .container .grid-3 {
+        display: block;
+        text-align: center;
+        width: 85%;
     }
-    .header-content {
-        top: 0;
-
+    p {
+        text-align: center;
     }
-    .grid-3 {
-        grid-template-columns: 1fr, 1fr;
+    .footer1 {
+        text-align: center;
     }
 }

@@ -134,9 +134,10 @@ h3 {
     }
     .rithg {
       width: 100%;
+      margin-right: auto;
     }
     .video{
-      width: 580px;
+      width: 350px;
       margin-left: none;
       margin-right: none;
       background-color: orange;

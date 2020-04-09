@@ -176,7 +176,7 @@ h3 a:hover {
         margin-top: 5px;
     }
     .header-content .logo{
-        margin-top: 35px;
+        margin-top: 90px;
         height: 100px;
         width: 100px;
     }
@@ -184,8 +184,11 @@ h3 a:hover {
         display: none;
     }
     .grid-2 {
+        display: block;
+        text-align: center;
         grid-template-columns: 1fr;
-        margin: 5px;
+        width: 85%;
+        padding: 1rem 1rem;
     }
     .servicios {
         padding: 1rem 1rem;
@@ -197,6 +200,19 @@ h3 a:hover {
         display: block;
         text-align: center;
         width: 85%;
+        margin: 5px;
+        padding: 1rem 1rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 85%;
+        margin: 5px;
+        padding: 1.5rem;
+    }
+    .title {
+        font-size: 1.5rem;
+        text-align: center;
     }
     p {
         text-align: center;
